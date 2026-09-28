@@ -1,23 +1,77 @@
 aid: beyondtrucks
+
 name: BeyondTrucks
-description: 'BeyondTrucks is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://framerusercontent.com/assets/vntdfcQnIVZRLCmoBy5AwddI.png
+
+description: 'BeyondTrucks provides AI‑powered transportation management software for mission‑critical fleets. Their platform automates order ingestion, dispatch planning, finance, and analytics, leveraging generative AI to create dynamic rate logic and real‑time optimization. Serving industries from petroleum to food‑and‑beverage, BeyondTrucks helps fleets reduce manual errors, improve utilization, and accelerate order processing with intelligent automation and predictive notifications.'
+
 url: https://raw.githubusercontent.com/api-evangelist/beyondtrucks/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Transportation
+- AI
+- Logistics
+- Fleet Management
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/beyondtrucks-hosts.yml
+- type: Vendors
+  url: vendors/beyondtrucks-vendors.yml
+- type: Newsroom
+  url: https://www.beyondtrucks.com/press/news
+- type: DomainSecurity
+  url: security/beyondtrucks-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.beyondtrucks.com
+
+- type: DeveloperPortal
+  url: https://go.beyondtrucks.com
+- type: Documentation
+  url: https://go.beyondtrucks.com
+- type: Support
+  url: https://www.beyondtrucks.com/contact-us
+- type: Blog
+  url: https://www.beyondtrucks.com/blog
+- type: TermsOfService
+  url: https://www.beyondtrucks.com/terms
+- type: PrivacyPolicy
+  url: https://www.beyondtrucks.com/privacy
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developer portal at https://go.beyondtrucks.com returns HTML shell with no machine‑readable spec.
+  evidence:
+    - url: https://go.beyondtrucks.com
+      status: 200
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

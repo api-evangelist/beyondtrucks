@@ -1,0 +1,38 @@
+generated: '2026-09-28'
+method: probed
+source: https://www.beyondtrucks.com
+signals:
+  data_subject_request:
+    - evidence:
+        - source: https://www.beyondtrucks.com/terms
+          http_status: 200
+          fetched: '2026-09-28'
+          quote: "You understand that any termination of your Account may involve deletion of User Content associated with your Account from our live databases. Company will not have any liability whatsoever to you for any termination of your rights under these Terms, including for termination of your Account or deletion of User Content."
+      note: Indicates that user can request termination and deletion of data.
+    - evidence:
+        - source: https://www.beyondtrucks.com/privacy
+          http_status: 200
+          fetched: '2026-09-28'
+          quote: "Sensitive Categories of Personal Data: State identifiers, such as driver’s license information; Financial data; and Precise geolocation data. Several jurisdictions grant state residents certain rights, including the right to access specific types of personal information, the right to learn how we process personal information, the right to correct inaccurate personal information, the right to know whether and how ..."
+      note: Describes data subject rights to access, correct, and know processing.
+  global_privacy_control:
+    - evidence:
+        - source: https://www.beyondtrucks.com/privacy
+          http_status: 200
+          fetched: '2026-09-28'
+          quote: "formation necessary to provide you with personalized ads may be considered a \"sale,\" even if no money is exchanged. You may learn more about how to opt out of such personalized ads through our \"Do Not Sell\" Option here."
+      note: Provides a Do Not Sell option, indicating GPC compliance.
+  age_assurance:
+    - evidence:
+        - source: https://www.beyondtrucks.com/privacy
+          http_status: 200
+          fetched: '2026-09-28'
+          quote: "The Services are not directed at individuals under the age of 13. We do not knowingly collect personal information from children under 13. If you become aware that a child has provided us with personal information, please contact us using the contact details provided in the \"Contact Us\" section below."
+      note: States age restriction and lack of data collection from children.
+  data_retention:
+    - evidence:
+        - source: https://www.beyondtrucks.com/privacy
+          http_status: 200
+          fetched: '2026-09-28'
+          quote: "Security and Data Retention We implement a variety of security measures to maintain the safety of your personal information when you enter, submit, or access your personal information. For example, when possible, ..."
+      note: Mentions security measures and data retention practices.
